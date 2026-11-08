@@ -27,6 +27,7 @@ function createProductCard(product)
 {
     const card = document.createElement('article');
     card.className = 'card';
+    card.title = product.title; /*shows full name when hovered*/
     
     // Create thumbnail button wrapper
     const thumbBtn = document.createElement('button');
@@ -62,6 +63,7 @@ function createProductCard(product)
     const title = document.createElement('h2');
     title.className = 'card-title';
     title.textContent = product.title;
+    title.title = product.title; 
     
     //price
     const price = document.createElement('p');
